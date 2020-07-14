@@ -55,9 +55,9 @@ class Camera
         }
         void update()
         {
-            //glPushAttrib(GL_TRANSFORM_BIT);
-                //glTranslatef(position.getX(), position.getY(), position.getZ());
-            //glPopMatrix();
+            glPushAttrib(GL_TRANSFORM_BIT);
+                glTranslatef(position.getX(), position.getY(), position.getZ());
+            glPopMatrix();
         }
         void move(int MoveValue)
         {
